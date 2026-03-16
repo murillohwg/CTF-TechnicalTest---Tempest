@@ -2,8 +2,6 @@ import hashlib
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 
-
-
 cipher_hex = """
 c8542fb5e696c9d059b050a8463962f025613cfb3727c4136f11d2a7d9e737d4
 de7fa30288db923d407851f51e4ca689c7cf2139e39093124743b8606c511294
@@ -50,8 +48,6 @@ b0b543f9af848352f17587ca1612a2befd95017392214f5ee59b3a0b76106d5f
 bf691ef598cba64ca2a038eb88bc08517a94752a70da52aecbd83be94b00062f
 10a431d7676278e9698da30624c8dab0f1908447f38ffa0e6279a45f3951f10c
 """
-
-
 # limpa quebras de linha
 cipher_hex = cipher_hex.replace("\n", "").replace(" ", "")
 cipher_bytes = bytes.fromhex(cipher_hex)
