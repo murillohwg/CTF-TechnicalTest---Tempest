@@ -55,7 +55,7 @@ Payload
 {
 "name": "Tavares Lunik Bernardi",
 "role": "operador"
-"Authorization": "Beare TOKEN_JWT_FORMAT"
+"Authorization: Bearer TOKEN_JWT_FORMAT"
 } 
 
 This allowed unauthorized access to internal data exposed by the administrative dashboard.
