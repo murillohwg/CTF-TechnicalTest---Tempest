@@ -45,7 +45,7 @@ By modifying the token header algorithm to **"none"**, it was possible to craft 
 
 Example structure:
 
-Header
+`Header
 {
 "alg": "none",
 "typ": "JWT"
@@ -56,7 +56,7 @@ Payload
 "name": "Tavares Lunik Bernardi",
 "role": "operador"
 "Authorization": "Beare TOKEN_JWT_FORMAT"
-}
+} `
 
 This allowed unauthorized access to internal data exposed by the administrative dashboard.
 
