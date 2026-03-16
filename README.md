@@ -26,14 +26,13 @@ The objective was to investigate the target application, identify vulnerabilitie
 
 ### 1. Confidential File Discovery
 
-During the investigation phase, several confidential files were discovered containing hashed identifiers by exploring some ocult directories and then using a script in python to decode the hash.
+During the investigation phase, we discovered several hidden directories that allowed us to download confidential documents.
 
-
-A custom Python script was developed to brute-force potential date values and match them against the observed hash.
+In one of these documents, we found a hexadecimal hash. To decode the information, a custom Python script was developed to brute-force possible date values and match them against the observed hash.
 
 Script available in:
 
-´´Scripts/decrypt.py´´
+`scripts/decrypt.py`
 
 ---
 ### 2. JWT Authentication Bypass
