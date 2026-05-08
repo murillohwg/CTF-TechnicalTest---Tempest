@@ -28,20 +28,32 @@ The objective was to investigate the target application, identify vulnerabilitie
 
 During the investigation phase, we discovered several hidden directories that allowed us to download confidential documents.
 
+![confidentialdocuments](./Screenshots/confidentialdocuments.png) 
+
 In one of these documents, we found a hexadecimal hash. To decode the information, a custom Python script was developed to brute-force possible date values and match them against the observed hash.
+
+![hasdoc](./Screenshots/hashiddendocument.png) 
+
+![flag1](./Screenshots/FLAG1_usingscript.png) 
 
 Script available in:
 
 `scripts/decrypt.py`
 
 ---
+
+
 ### 2. JWT Authentication Bypass
 
 The application used JSON Web Tokens (JWT) for authentication.
 
+![apitoken](./Screenshots/confirmationAPItokenformat.png) 
+
 However, the backend failed to properly validate the token signature.
 
 By modifying the token header algorithm to **"none"**, it was possible to craft a token with administrative privileges.
+
+![flag2](./Screenshots/FLAG2.png) 
 
 Example structure:
 
