@@ -32,7 +32,7 @@ During the investigation phase, we discovered several hidden directories that al
 
 In one of these documents, we found a hexadecimal hash. To decode the information, a custom Python script was developed to brute-force possible date values and match them against the observed hash.
 
-![hasdoc](./Screenshots/hashiddendocument.png) 
+![hasdoc](./Screenshots/hashidoddendocument.png) 
 
 ![flag1](./Screenshots/FLAG1_usingscript.png) 
 
